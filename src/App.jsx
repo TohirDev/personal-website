@@ -1,10 +1,9 @@
-import { Box } from "@mui/material";
-
+import { Pages } from "pages";
+import "index.css";
 function App() {
   return (
     <>
-      <h1>hi</h1>
-      <Box>he</Box>
+      <Pages />
     </>
   );
 }
