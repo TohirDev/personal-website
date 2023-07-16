@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 export const Services = () => {
   return (
     <Box
@@ -50,7 +50,7 @@ export const Services = () => {
         >
           What I Do?
         </Typography>
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex", mt: 6 }}>
           <Box>
             <Box sx={{ display: "flex", mt: 6 }}>
               <Box
