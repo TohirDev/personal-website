@@ -1,6 +1,7 @@
 import { AboutMe } from "./about-me";
 import { HomePage } from "./home-page";
 import { Navbar } from "./navbar";
+import { Services } from "./services";
 
 export const Pages = () => {
   return (
@@ -8,6 +9,7 @@ export const Pages = () => {
       <Navbar />
       <HomePage />
       <AboutMe />
+      <Services />
     </>
   );
 };
