@@ -4,23 +4,28 @@ export const Resume = () => {
     <Box
       sx={{
         width: "fit-content",
-        width: "85%",
+        width: {
+          md: "85%",
+          xs: "100%",
+        },
         marginLeft: "auto",
         background: "#212529",
         backgroundSize: "cover",
         backgroundPosition: "fixed",
         py: 10,
       }}
-      id="aboutme"
+      id="resume"
     >
-      <Box sx={{ width: "1440px", margin: "0px auto", pt: 15, height: "100%" }}>
+      <Box sx={{ maxWidth: "1440px", margin: "0px auto", pt: 15, height: "100%", padding: "20px" }}>
         <Typography
           variant="h1"
           id="text"
           sx={{
             textAlign: "center",
-            fontSize: "2.5rem",
-            // my: 20,
+            fontSize: {
+              lg: "2.5rem",
+              xs: "30px",
+            },
             color: "#fff",
             position: "relative",
             width: "100%",
@@ -40,19 +45,44 @@ export const Resume = () => {
               opacity: ".2",
               zIndex: "-1",
               position: "absolute",
-              fontSize: "8rem",
+              fontSize: {
+                lg: "8rem",
+                xs: "60px",
+              },
               width: "100%",
-              top: -45,
+              top: {
+                lg: -45,
+                xs: -10,
+              },
               left: 0,
               fontWeight: "bold",
             },
+            mt: 6,
           }}
         >
           Resume
         </Typography>
 
-        <Box sx={{ mt: 10, display: "flex", alignItems: "center", justifyContent: "space-around" }}>
-          <Box>
+        <Box
+          sx={{
+            mt: 10,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-around",
+            flexDirection: {
+              md: "row",
+              xs: "column",
+            },
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
             <Typography variant="h4" sx={{ color: "#fff", fontWeight: "bold" }}>
               My Education
             </Typography>
@@ -60,7 +90,10 @@ export const Resume = () => {
               sx={{
                 borderRadius: "10px",
                 background: "#111418",
-                width: "500px",
+                maxWidth: {
+                  md: "500px",
+                  xs: "300px",
+                },
                 padding: "20px",
                 mt: 5,
               }}
@@ -90,7 +123,10 @@ export const Resume = () => {
               sx={{
                 borderRadius: "10px",
                 background: "#111418",
-                width: "500px",
+                maxWidth: {
+                  md: "500px",
+                  xs: "300px",
+                },
                 padding: "20px",
                 mt: 5,
               }}
@@ -120,7 +156,10 @@ export const Resume = () => {
               sx={{
                 borderRadius: "10px",
                 background: "#111418",
-                width: "500px",
+                maxWidth: {
+                  md: "500px",
+                  xs: "300px",
+                },
                 padding: "20px",
                 mt: 5,
               }}
@@ -147,15 +186,35 @@ export const Resume = () => {
               </Typography>
             </Box>
           </Box>
-          <Box>
-            <Typography variant="h4" sx={{ color: "#fff", fontWeight: "bold" }}>
-              My Education
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <Typography
+              variant="h4"
+              sx={{
+                color: "#fff",
+                fontWeight: "bold",
+                mt: {
+                  md: 0,
+                  xs: 5,
+                },
+              }}
+            >
+              My Experience
             </Typography>
             <Box
               sx={{
                 borderRadius: "10px",
                 background: "#111418",
-                width: "500px",
+                maxWidth: {
+                  md: "500px",
+                  xs: "300px",
+                },
                 padding: "20px",
                 mt: 5,
               }}
@@ -185,7 +244,10 @@ export const Resume = () => {
               sx={{
                 borderRadius: "10px",
                 background: "#111418",
-                width: "500px",
+                maxWidth: {
+                  md: "500px",
+                  xs: "300px",
+                },
                 padding: "20px",
                 mt: 5,
               }}
@@ -215,7 +277,10 @@ export const Resume = () => {
               sx={{
                 borderRadius: "10px",
                 background: "#111418",
-                width: "500px",
+                maxWidth: {
+                  md: "500px",
+                  xs: "300px",
+                },
                 padding: "20px",
                 mt: 5,
               }}

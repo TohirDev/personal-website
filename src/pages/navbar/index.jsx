@@ -22,7 +22,10 @@ export const Navbar = () => {
         position: "fixed",
         top: 0,
         left: 0,
-        display: "flex",
+        display: {
+          xs: "none",
+          md: "flex",
+        },
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-between",

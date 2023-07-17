@@ -11,7 +11,10 @@ export const Portfolio = () => {
     <Box
       sx={{
         width: "fit-content",
-        width: "85%",
+        width: {
+          md: "85%",
+          xs: "100%",
+        },
         marginLeft: "auto",
         background: "#343a40",
         backgroundSize: "cover",
@@ -19,16 +22,18 @@ export const Portfolio = () => {
         // height: "100vh",
         py: 10,
       }}
-      id="aboutme"
+      id="portfolio"
     >
-      <Box sx={{ width: "1440px", margin: "0px auto", pt: 15, height: "100%" }}>
+      <Box sx={{ maxWidth: "1440px", margin: "0px auto", pt: 15, height: "100%", padding: "20px" }}>
         <Typography
           variant="h1"
           id="text"
           sx={{
             textAlign: "center",
-            fontSize: "2.5rem",
-            // my: 20,
+            fontSize: {
+              lg: "2.5rem",
+              xs: "30px",
+            },
             color: "#fff",
             position: "relative",
             width: "100%",
@@ -48,12 +53,19 @@ export const Portfolio = () => {
               opacity: ".2",
               zIndex: "-1",
               position: "absolute",
-              fontSize: "8rem",
+              fontSize: {
+                lg: "8rem",
+                xs: "60px",
+              },
               width: "100%",
-              top: -45,
+              top: {
+                lg: -45,
+                xs: -10,
+              },
               left: 0,
               fontWeight: "bold",
             },
+            mt: 6,
           }}
         >
           My Work

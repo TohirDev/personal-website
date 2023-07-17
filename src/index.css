@@ -3,13 +3,18 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-a#scroll-btn {
+.back {
+  top: 0;
+}
+/* a#scroll-btn {
   position: absolute;
   height: 80px;
   width: 40px;
@@ -19,8 +24,8 @@ a#scroll-btn {
   right: 0;
   bottom: 6.25em;
   border-radius: 3em;
-}
-a#scroll-btn:before {
+} */
+/* a#scroll-btn:before {
   position: absolute;
   content: "";
   margin: auto;
@@ -32,7 +37,7 @@ a#scroll-btn:before {
   background: #fff;
   border-radius: 50%;
   animation: move-down 1.5s infinite;
-}
+} */
 
 a#scroll-btn:after {
   position: absolute;
@@ -54,7 +59,7 @@ a#scroll-btn:after {
     opacity: 0.5;
   }
   100% {
-    transform: translateY(30px);
+    transform: translateY(20px);
     opacity: 0;
   }
 }

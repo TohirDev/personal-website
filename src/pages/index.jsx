@@ -1,5 +1,6 @@
 import { AboutMe } from "./about-me";
 import { Contact } from "./contact";
+import { Footer } from "./footer";
 import { HomePage } from "./home-page";
 import { Navbar } from "./navbar";
 import { Portfolio } from "./portfolio";
@@ -16,6 +17,7 @@ export const Pages = () => {
       <Resume />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   );
 };
